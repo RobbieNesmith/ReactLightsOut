@@ -1,32 +1,42 @@
+* {
+	box-sizing: border-box;
+}
+
 .App {
   text-align: center;
 }
 
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 40vmin;
+#Container {
+	width: 20em;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+#GameBoard {
+	width: 20em;
+	height: 20em;
 }
 
-.App-link {
-  color: #61dafb;
+.gametile {
+	display: inline-block;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.dark {
+	background-color: #272A4F;
+}
+
+.light {
+	background-color:#EBD774;
+}
+
+.flexContainer {
+	display: flex;
+}
+
+.shrinkable50 {
+	width: 50%;
+	flex-shrink: 1;
+}
+.width2em{
+	width: 2em;
+	flex-shrink: 0;
+	text-align: center;
 }
